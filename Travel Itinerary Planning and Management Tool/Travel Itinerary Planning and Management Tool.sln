@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Travel Itinerary Planning and Management Tool", "Travel Itinerary Planning and Management Tool.pyproj", "{BF0D36F2-FBD0-43C8-8278-C781515FF221}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF0D36F2-FBD0-43C8-8278-C781515FF221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF0D36F2-FBD0-43C8-8278-C781515FF221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {770816B6-396F-4BAF-832E-261BC5AFF984}
+	EndGlobalSection
+EndGlobal
