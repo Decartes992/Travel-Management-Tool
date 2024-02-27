@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bf0d36f2-fbd0-43c8-8278-c781515ff221</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Travel_Itinerary_Planning_and_Management_Tool.py</StartupFile>
+    <StartupFile>Travel Itinerary Planning and Management Tool.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Travel_Itinerary_Planning_and_Management_Tool.py" />
+    <Compile Include="itineraries\forms.py" />
+    <Compile Include="itineraries\models.py" />
+    <Compile Include="Travel Itinerary Planning and Management Tool.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="itineraries\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
