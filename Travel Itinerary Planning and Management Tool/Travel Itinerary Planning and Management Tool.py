@@ -1,39 +1,31 @@
-import datetime
+import tkinter as tk
+from tkinter import ttk
 
+def open_itinerary_view():
+    # Placeholder function to open the itinerary view
+    print("Itinerary View Opened")
 
-class TravelItinerary:
-    def __init__(self, destination, start_date, end_date):
-        self.destination = destination
-        self.start_date = start_date
-        self.end_date = end_date
-        self.activities = []
+def open_activity_view():
+    # Placeholder function to open the activity view
+    print("Activity View Opened")
 
-    def add_activity(self, activity):
-        self.activities.append(activity)
+# Create the main window
+root = tk.Tk()
+root.title("Travel Itinerary Planning and Management Tool")
 
-    def remove_activity(self, activity):
-        self.activities.remove(activity)
+# Set the window size
+root.geometry("600x400")
 
-    def get_activities(self):
-        return self.activities
+# Create a label for the title
+title_label = ttk.Label(root, text="Welcome to the Travel Itinerary Planner", font=("Arial", 16))
+title_label.pack(pady=20)
 
-    def get_duration(self):
-        return (self.end_date - self.start_date).days
+# Create buttons for navigating to different parts of the application
+itinerary_button = ttk.Button(root, text="Manage Itineraries", command=open_itinerary_view)
+itinerary_button.pack(pady=10)
 
-# Example usage
-destination = "Paris"
-start_date = datetime.date(2022, 9, 1)
-end_date = datetime.date(2022, 9, 7)
+activity_button = ttk.Button(root, text="Manage Activities", command=open_activity_view)
+activity_button.pack(pady=10)
 
-itinerary = TravelItinerary(destination, start_date, end_date)
-
-itinerary.add_activity("Visit Eiffel Tower")
-itinerary.add_activity("Explore Louvre Museum")
-itinerary.add_activity("Take a boat tour on the Seine River")
-
-activities = itinerary.get_activities()
-for activity in activities:
-    print(activity)
-
-duration = itinerary.get_duration()
-print(f"Duration of the trip: {duration} days")
+# Start the application
+root.mainloop()
