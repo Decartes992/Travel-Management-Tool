@@ -15,7 +15,7 @@ This project is intended for the ECED4620 at Dalhousie University
     cd Travel-Itinerary-Planning-and-Management-Tool
 2. Install the required Python packages:
     pip install -r requirements.txt
-3. 
+
 ## Usage
 
 Run the `GUI.py` script to start the application:
