@@ -4,14 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bf0d36f2-fbd0-43c8-8278-c781515ff221</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Travel Itinerary Planning and Management Tool.py</StartupFile>
+    <StartupFile>GUI.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>Travel Itinerary Planning and Management Tool</Name>
     <RootNamespace>Travel Itinerary Planning and Management Tool</RootNamespace>
-    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env1|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,14 +22,23 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="itineraries\forms.py" />
-    <Compile Include="itineraries\models.py" />
-    <Compile Include="Travel Itinerary Planning and Management Tool.py" />
+    <Compile Include="create_itinerary_view.py" />
+    <Compile Include="GUI.py" />
+    <Compile Include="HomeScreen.py" />
+    <Compile Include="models.py" />
+    <Compile Include="tryoutfile.py" />
+    <Compile Include="ViewItinerariesView.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="itineraries\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Interpreter Include="env1\">
+      <Id>env1</Id>
+      <Version>3.9</Version>
+      <Description>env1 (Python 3.9 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
     <Interpreter Include="env\">
       <Id>env</Id>
       <Version>0.0</Version>

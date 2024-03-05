@@ -29,3 +29,6 @@ class CreateItineraryView(tk.Frame):
 
          self.create_button = tk.Button(self, text="Create Itinerary", command=self.create_itinerary)
          self.create_button.pack(pady=20)
+
+         self.back_button = tk.Button(self, text="Back", command=self.go_to_main_view)
+         self.back_button.pack(pady=20)
