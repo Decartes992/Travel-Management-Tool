@@ -1,5 +1,1 @@
-datetime
-tkinter
-ttkbootstrap
-os
-pathlib
+ttkbootstrap==0.5.3
