@@ -22,7 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Add_itinerary.py" />
     <Compile Include="create_itinerary_view.py" />
+    <Compile Include="Dependencies.py" />
     <Compile Include="GUI.py" />
     <Compile Include="HomeScreen.py" />
     <Compile Include="models.py" />

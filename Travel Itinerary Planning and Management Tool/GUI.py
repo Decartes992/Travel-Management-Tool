@@ -8,20 +8,29 @@ import os
 # Change the current working directory to the directory of this script
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
+WINDOW_HEIGHT = 1024
+WINDOW_WIDTH = 1440
+DEFAULT_BG = "#000000"
+START_BUTTON_X = 580.0
+START_BUTTON_Y = 480.0
+START_BUTTON_WIDTH = 225.0
+START_BUTTON_HEIGHT = 65.0
+
+
 class MainView(tk.Frame):
     def __init__(self, master=None):
         super().__init__(master)
         self.pack(fill="both", expand=True)
 
         # Create a canvas for drawing
-        self.canvas = Canvas(self, bg="#000000", height=1024, width=1440, bd=0, highlightthickness=0, relief="ridge")
+        self.canvas = Canvas(self, bg=DEFAULT_BG, height=WINDOW_HEIGHT, width=WINDOW_WIDTH, bd=0, highlightthickness=0, relief="ridge")
         self.canvas.place(x=0, y=0)
 
         # Load and place the background image
         bg_image_path = "BackgroundImage.png" 
         bg_image = Image.open(bg_image_path)
         self.bg_photoimage = ImageTk.PhotoImage(bg_image)
-        self.canvas.create_image(720.0, 512.0, image=self.bg_photoimage)
+        self.canvas.create_image(WINDOW_WIDTH/2, WINDOW_HEIGHT/2, image=self.bg_photoimage)
 
         # Load and place the start button image with transparency
         start_button_path = "StartButton.png" 
@@ -36,7 +45,8 @@ class MainView(tk.Frame):
             relief="flat",
 
         )
-        self.start_button.place(x=580.0, y=480.0, width=225.0, height=65.0)
+        self.start_button.place(x=START_BUTTON_X, y=START_BUTTON_Y, width=START_BUTTON_WIDTH, height=START_BUTTON_HEIGHT)
+        
 
         # Add text to the canvas
         self.canvas.create_text(
