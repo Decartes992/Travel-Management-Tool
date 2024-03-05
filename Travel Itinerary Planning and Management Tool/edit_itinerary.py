@@ -1,3 +1,16 @@
+"""
+File: edit_itinerary.py
+Author: Iftekhar Rafi
+Dal ID: B00871031
+
+This file contains the implementation of the EditItinerary class, which is a tkinter-based GUI window for editing travel itineraries. It allows the user to modify the details of a specific itinerary, such as the city, country, departure date, return date, hotel name, and hotel address. The edited itinerary is then saved to a JSON file.
+
+The EditItinerary class inherits from the tk.Toplevel class and provides a user-friendly interface for updating itinerary details. It includes labels and entry fields for each detail, as well as a submit button to save the changes. The class also utilizes the pycountry library to retrieve a list of countries for the country field and the ttkbootstrap library for styling the GUI components.
+
+The class methods handle the retrieval of countries, the submission of the updated itinerary, and the updating of the JSON file containing the itineraries. The updated itinerary is printed to the console for verification.
+
+
+"""
 import tkinter as tk
 import json
 from tkinter import ttk

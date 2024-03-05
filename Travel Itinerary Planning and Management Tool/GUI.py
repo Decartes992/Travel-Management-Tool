@@ -1,3 +1,12 @@
+"""
+Travel Itinerary Planning and Management Tool
+
+This file contains the GUI implementation for the travel itinerary planning and management tool. It provides a graphical user interface for users to easily create and manage itineraries.
+
+Author: Iftekhar Rafi
+Dal ID: B00871031
+"""
+
 import tkinter as tk
 from tkinter import Canvas, Button
 from HomeScreen import HomeScreen

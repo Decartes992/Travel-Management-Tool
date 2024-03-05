@@ -1,3 +1,15 @@
+"""
+File: Add_itinerary.py
+Author: Iftekhar Rafi
+Dal ID: B00871031
+
+This file contains the implementation of the AddItinerary class, which is a tkinter Toplevel window for adding a new itinerary to the travel itinerary planning and management tool. It provides a user interface for entering the details of the itinerary, such as city, country, departure date, return date, hotel name, and hotel address. The entered details are then used to create a Destination object, a Hotel object, and an Itinerary object. The itinerary details are printed, converted to a dictionary, and added to the list of existing itineraries stored in a JSON file. The window is closed after the submission of the itinerary.
+
+The AddItinerary class inherits from the tkinter Toplevel class and utilizes various tkinter widgets and modules, such as ttk, pycountry, and DateEntry from ttkbootstrap. It also imports the models module, which contains the definitions of the Itinerary, Destination, and Hotel classes.
+
+The file also includes the get_countries method, which retrieves the list of countries from a data source using the pycountry module.
+
+"""
 import tkinter as tk
 import json
 from tkinter import ttk
@@ -84,4 +96,3 @@ class AddItinerary(tk.Toplevel):
 
         # Close the window
         self.destroy()
-        

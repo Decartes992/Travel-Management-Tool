@@ -23,13 +23,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Add_itinerary.py" />
-    <Compile Include="create_itinerary_view.py" />
-    <Compile Include="Dependencies.py" />
     <Compile Include="GUI.py" />
     <Compile Include="HomeScreen.py" />
     <Compile Include="models.py" />
-    <Compile Include="tryoutfile.py" />
-    <Compile Include="ViewItinerariesView.py" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="CurrentEnvironment\">

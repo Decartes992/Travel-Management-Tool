@@ -1,3 +1,15 @@
+"""
+File: models.py
+Author: Iftekhar Rafi
+Dal ID: B00871031
+
+This file contains the implementation of the classes used in the Travel Itinerary Planning and Management Tool.
+
+Classes:
+- Destination: Represents the travel destination with city and country.
+- Hotel: Stores details of the hotel for the trip.
+- Itinerary: Stores and manages details of a travel itinerary.
+"""
 
 class Destination:
     """Represents the travel destination with city and country."""

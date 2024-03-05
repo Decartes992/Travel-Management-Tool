@@ -1,3 +1,22 @@
+"""
+File: HomeScreen.py
+Author: Iftekhar Rafi
+Dal ID: B00871031
+
+This file contains the implementation of the HomeScreen class, which represents the main screen of the Travel Itinerary Planning and Management Tool. It provides functionality for displaying a list of itineraries, adding new itineraries, editing existing itineraries, and deleting itineraries.
+
+The HomeScreen class inherits from the tk.Frame class and utilizes the tkinter library for creating the graphical user interface. It also uses other modules such as ttkbootstrap, PIL, and json for additional functionality.
+
+The main components of the HomeScreen class include a canvas for drawing, a background image, labels for the title and buttons, a ScrolledFrame for displaying the list of itineraries, and methods for loading, creating, and updating itineraries.
+
+The load_itineraries method is responsible for loading the existing itineraries from a JSON file, clearing the scrolled frame, and adding labels and buttons for each itinerary. The create_itinerary_frame method is used to create a new frame for each itinerary and populate it with labels and buttons.
+
+The HomeScreen class also includes a search functionality, allowing users to search for itineraries based on the country. The on_search_entry_return method is triggered when the user presses the return key after entering a search query.
+
+Overall, this file provides the main user interface for managing travel itineraries and serves as the entry point for the Travel Itinerary Planning and Management Tool.
+
+"""
+
 import json
 import tkinter as tk
 import ttkbootstrap as ttk
@@ -17,6 +36,8 @@ X_GENERAL_OFFSET = 180 # X offset for the general activities
 SCROLLED_FRAME_WITDTH = 1080 # Width of the scrolled frame
 SCROLLED_FRAME_HEIGHT = 682.67 # Height of the scrolled frame
 SCROLLED_FRAME_Y_OFFSET = 170.67 # Y offset for the scrolled frame
+DEFAULT_BG = "#000000"
+
 
 class HomeScreen(tk.Frame):
     def __init__(self, master=None, show_main_view=None):
@@ -25,7 +46,7 @@ class HomeScreen(tk.Frame):
         self.pack(fill="both", expand=True)
         
         # Create a canvas for drawing
-        self.canvas = Canvas(self, bg="#000000", height=1024, width=1440, bd=0, highlightthickness=0, relief="ridge")
+        self.canvas = Canvas(self, bg=DEFAULT_BG, height=1024, width=1440, bd=0, highlightthickness=0, relief="ridge")
         self.canvas.place(x=0, y=0)
         
         # Load and place the background image
