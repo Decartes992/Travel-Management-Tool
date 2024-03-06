@@ -25,13 +25,7 @@
     <Compile Include="Add_itinerary.py" />
     <Compile Include="GUI.py" />
     <Compile Include="HomeScreen.py" />
-    <Compile Include="test_delete_itinerary.py" />
-    <Compile Include="test_edit_itinerary.py" />
-    <Compile Include="test_HomeScreen.py" />
     <Compile Include="models.py" />
-    <Compile Include="test_models.py" />
-    <Compile Include="test_Add_itinerary.py" />
-    <Compile Include="test_GUI.py" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="CurrentEnvironment\">

@@ -92,7 +92,5 @@ class AddItinerary(tk.Toplevel):
         with open("itinerary.json", "w") as file:
             json.dump(existing_itineraries, file, indent=4)
 
-        self.master.load_itineraries()
-
         # Close the window
         self.destroy()

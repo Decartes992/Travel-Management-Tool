@@ -1,27 +1,11 @@
 [
     {
-        "Departure Date": "3/5/2024",
-        "Return Date": "3/27/2024",
-        "City": "Sydney",
-        "Country": "Australia",
-        "Hotel Name": "Sydney Plaza Hotel",
-        "Hotel Address": "68 King Road, Sydney"
-    },
-    {
-        "Departure Date": "3/5/2024",
-        "Return Date": "3/5/2024",
+        "Departure Date": "3/12/2024",
+        "Return Date": "3/29/2024",
         "City": "London",
         "Country": "United Kingdom",
-        "Hotel Name": "London Courtyard Hotel",
+        "Hotel Name": "London Courtyard ",
         "Hotel Address": "159 Main St, London"
-    },
-    {
-        "Departure Date": "3/5/2024",
-        "Return Date": "3/5/2024",
-        "City": "Berlin",
-        "Country": "Germany",
-        "Hotel Name": "Berlin Courtyard Hotel",
-        "Hotel Address": "18 Park Ave, Berlin"
     },
     {
         "Departure Date": "3/5/2024",
@@ -382,5 +366,21 @@
         "Country": "Bangladesh",
         "Hotel Name": "Sheraton",
         "Hotel Address": ""
+    },
+    {
+        "Departure Date": "3/14/2024",
+        "Return Date": "4/19/2024",
+        "City": "Rajshahi",
+        "Country": "Bangladesh",
+        "Hotel Name": "Sultan's Palace",
+        "Hotel Address": ""
+    },
+    {
+        "Departure Date": "3/5/2024",
+        "Return Date": "3/5/2024",
+        "City": "test",
+        "Country": "test",
+        "Hotel Name": "test",
+        "Hotel Address": "test"
     }
 ]

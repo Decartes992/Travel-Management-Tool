@@ -59,20 +59,21 @@ class MainView(tk.Frame):
 
         # Add text to the canvas
         self.canvas.create_text(
-            450.0, 365.0, anchor="nw",
+            WINDOW_WIDTH/2, WINDOW_HEIGHT/2 - 100,
             text="Easily Create and Manage Itineraries",
             fill="#FFFBFB",
-            font=("Roboto", 16)
+            font=("Roboto", 16),
+            anchor="center"
         )
         self.canvas.create_text(
-            470.0, 263.0, anchor="nw",
+            WINDOW_WIDTH/2, WINDOW_HEIGHT/2 - 200,
             text="Travel Tool",
             fill="#FFFFFF",
-            font=("Roboto", 48)
+            font=("Roboto", 48),
+            anchor="center"
         )
 
     def on_start_button_click(self):
-        print("Start button was clicked")
         self.pack_forget()  # Hide the MainView
 
         self.home_screen = HomeScreen(self.master, self.show_main_view)
